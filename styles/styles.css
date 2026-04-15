@@ -268,4 +268,70 @@ footer {
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+/* main contact section */
+main.contact {
+    height: 420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* heading spacing */
+main.contact h2 {
+    margin-bottom: 24px;
+}
+
+/* override global flex so contact layout works */
+main.contact .flex {
+    display: flex;
+    justify-content: center !important;
+    align-items: flex-start !important;
+}
+
+/* labels column */
+main.contact .labels {
+    width: 120px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* inputs column */
+main.contact .inputs {
+    width: 260px;
+}
+
+/* textarea height */
+main.contact textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* form elements */
+main.contact input,
+main.contact textarea,
+main.contact button {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* button width */
+main.contact button {
+    width: 260px;
+    background-color: #E5AF42;
+    cursor: pointer;
+}
+
+/* hover state */
+main.contact button:hover {
+    background-color: #4278e5;
+    color: white;
+    text-decoration: underline;
+}
 
