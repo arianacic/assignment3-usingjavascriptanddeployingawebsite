@@ -25,18 +25,13 @@ const costDisplay = document.getElementById("calculated-cost");
 dayButtons.forEach(day => {
     day.addEventListener("click", function () {
 
-        // if it's already selected, do nothing
+        // prevent double-counting
         if (day.classList.contains("clicked")) {
             return;
         }
 
-        // otherwise, select it
         day.classList.add("clicked");
-
-        // increase day count
         dayCounter++;
-
-        // recalculate cost
         calculateCost();
     });
 });
