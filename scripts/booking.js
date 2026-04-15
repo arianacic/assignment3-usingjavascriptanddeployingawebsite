@@ -21,8 +21,25 @@ const costDisplay = document.getElementById("calculated-cost");
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
+// when a day is clicked:
+dayButtons.forEach(day => {
+    day.addEventListener("click", function () {
 
+        // if it's already selected, do nothing
+        if (day.classList.contains("clicked")) {
+            return;
+        }
 
+        // otherwise, select it
+        day.classList.add("clicked");
+
+        // increase day count
+        dayCounter++;
+
+        // recalculate cost
+        calculateCost();
+    });
+});
 
 
 /********* clear days *********/
