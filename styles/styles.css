@@ -210,6 +210,53 @@ footer {
 
 */
 
+.booking-page {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* spacing below day-selectors */
+.day-selectors {
+    margin-bottom: 12px;
+}
+
+/* list item spacing + size */
+.booking-page li {
+    width: 60px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    list-style: none;
+}
+
+/* small-button styling */
+.small-button {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* top-margin class */
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+/* clear days button */
+.clear-button {
+    width: 200px;
+}
+
+/* clicked state */
+.clicked {
+    background-color: #E5AF42;
+}
+
+/* center all items */
+.booking-page * {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /************* contact page *************/
