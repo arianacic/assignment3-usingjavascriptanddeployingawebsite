@@ -22,7 +22,7 @@ const costDisplay = document.getElementById("calculated-cost");
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
 // when a day is clicked:
-dayButtons.forEach(day => {
+dayButtons.forEach(function(day) {
     day.addEventListener("click", function () {
 
         // prevent double-counting
@@ -43,7 +43,7 @@ dayButtons.forEach(day => {
 clearButton.addEventListener("click", function () {
 
     // remove clicked class from all days
-    dayButtons.forEach(day => {
+    dayButtons.forEach(function(day) {
         day.classList.remove("clicked");
     });
 
