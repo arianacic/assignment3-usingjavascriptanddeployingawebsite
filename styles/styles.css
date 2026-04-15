@@ -110,6 +110,45 @@ footer a:hover {
 */
 
 
+/* header + footer background */
+header,
+footer {
+    background-color: #E5AF42; /* mustard yellow */
+}
+
+/* header layout */
+header {
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+/* header image */
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px 0 25px 25px;
+}
+
+/* center the h1 in remaining space */
+header h1 {
+    flex: 1;
+    text-align: center;
+}
+
+/* spacing between main and footer */
+main {
+    margin-bottom: 50px;
+}
+
+/* footer styling */
+footer {
+    height: 60px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 
 /************* index page *************/
