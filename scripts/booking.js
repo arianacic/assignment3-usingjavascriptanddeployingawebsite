@@ -63,7 +63,15 @@ clearButton.addEventListener("click", function () {
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
 
+// half‑day button
+halfButton.addEventListener("click", function () {
+    dailyRate = 20;
 
+    halfButton.classList.add("clicked");
+    fullButton.classList.remove("clicked");
+
+    calculateCost();
+});
 
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
