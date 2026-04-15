@@ -13,7 +13,7 @@ let dayCounter = 0;
 const dayButtons = document.querySelectorAll(".day-selectors li");
 const halfButton = document.getElementById("half");
 const fullButton = document.getElementById("full");
-const clearButton = document.getElementById("clear-days");
+const clearButton = document.getElementById("clear-button");
 const costDisplay = document.getElementById("calculated-cost");
 
 
