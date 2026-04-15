@@ -45,9 +45,19 @@ dayButtons.forEach(day => {
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
+clearButton.addEventListener("click", function () {
 
+    // remove clicked class from all days
+    dayButtons.forEach(day => {
+        day.classList.remove("clicked");
+    });
 
+    // reset variables
+    dayCounter = 0;
 
+    // reset cost
+    costDisplay.innerHTML = 0;
+});
 
 
 /********* change rate *********/
