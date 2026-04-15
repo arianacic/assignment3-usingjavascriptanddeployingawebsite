@@ -10,7 +10,7 @@ let dailyRate = 35;
 let dayCounter = 0;
 
 // get all clickable elements
-const dayButtons = document.querySelectorAll(".day-selectors li");
+const dayButtons = document.querySelectorAll(".day-selector li");
 const halfButton = document.getElementById("half");
 const fullButton = document.getElementById("full");
 const clearButton = document.getElementById("clear-button");
