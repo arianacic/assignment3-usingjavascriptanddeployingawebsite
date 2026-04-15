@@ -97,6 +97,12 @@ footer a:hover {
     cursor: pointer;
 }
 
+.day-selector li.clicked,
+.day-selector li.clicked:hover {
+    background-color: #E5AF42 !important;
+    color: black !important;
+    text-decoration: none !important;
+}
 
 
 /************* header/footer styling *************/
@@ -217,8 +223,27 @@ footer {
     font-size: 18px;
 }
 
+/* clicked must override hover */
+.day-selector li.clicked,
+.day-selector li.clicked:hover {
+    background-color: #E5AF42 !important;
+    color: black !important;
+    text-decoration: none !important;
+}
+
+/* fix flex so li background colors display properly */
+.day-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.day-selector li {
+    display: block;
+}
+
 /* spacing below day-selectors */
-.day-selectors {
+.day-selector {
     margin-bottom: 12px;
 }
 
