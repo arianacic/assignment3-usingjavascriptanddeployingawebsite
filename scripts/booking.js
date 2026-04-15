@@ -90,4 +90,7 @@ fullButton.addEventListener("click", function () {
 /********* calculate *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 
-
+function calculateCost() {
+    let total = dailyRate * dayCounter;
+    costDisplay.innerHTML = total;
+}
