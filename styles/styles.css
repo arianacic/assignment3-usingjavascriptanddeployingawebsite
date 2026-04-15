@@ -162,6 +162,38 @@ footer {
 */
 
 
+/* 2‑column layout: text left, image right */
+.index .flex {
+    align-items: flex-start;
+}
+
+/* right‑side image */
+.index img {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+/* h2 line-height equals font size */
+.index h2 {
+    line-height: 36px;
+}
+
+/* paragraph spacing */
+.index p {
+    margin-bottom: 12px;
+}
+
+/* fake-buttons on index page */
+.index .fake-button {
+    width: 250px;
+    margin: 0 75px; /* 150px total space between them */
+}
+
+/* center the pair of fake-buttons */
+.index .flex:last-of-type {
+    justify-content: center;
+}
 
 
 /************* bookings page *************/
