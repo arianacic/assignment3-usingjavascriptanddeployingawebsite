@@ -32,8 +32,6 @@ body {
 }
 
 
- 
-
 /************* site-wide text styling *************/
 
 /* TO DO:
@@ -50,9 +48,54 @@ body {
 */
 
 
+/* first-level headings */
+h1 {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+/* second-level headings */
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
 
+/* large text class */
+.large-text {
+    font-size: 24px;
+}
 
+/* fake button styling */
+.fake-button {
+    background-color: #E5AF42; /* mustard yellow */
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+}
+
+/* anchor styling */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* hover-state for anchors in main + footer */
+main a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* hover-state for fake-button + blue-hover */
+.fake-button:hover,
+.blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5; /* cornflower blue */
+    color: white;
+    cursor: pointer;
+}
 
 
 
@@ -69,8 +112,6 @@ body {
 
 
 
-
-
 /************* index page *************/
 
 /* TO-DO: 
@@ -80,8 +121,6 @@ body {
     - each fake-button on this page will be 250px wide with 150px of space between them.
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
-
-
 
 
 
@@ -102,16 +141,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /************* contact page *************/
 /* TO DO:
     - the main section of the .contact page will be 420px tall, and centered.
@@ -120,7 +149,5 @@ body {
     - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
-
-
 
 
